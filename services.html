@@ -320,22 +320,22 @@
     </div>
   </div>
   <!-- move top -->
-  <button onclick="topFunction()" id="movetop" title="Go to top">
+  <!-- <button onclick="topFunction()" id="movetop" title="Go to top">
     <i class="fas fa-level-up-alt"></i>
-  </button>
+  </button> -->
   <script>
     // When the user scrolls down 20px from the top of the document, show the button
     window.onscroll = function () {
       scrollFunction()
     };
 
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("movetop").style.display = "block";
-      } else {
-        document.getElementById("movetop").style.display = "none";
-      }
-    }
+    // function scrollFunction() {
+    //   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    //     document.getElementById("movetop").style.display = "block";
+    //   } else {
+    //     document.getElementById("movetop").style.display = "none";
+    //   }
+    // }
 
     // When the user clicks on the button, scroll to the top of the document
     function topFunction() {
@@ -389,6 +389,19 @@
 </script>
 <!--//MENU-JS-->
 <script src="assets/js/bootstrap.min.js"></script>
+
+
+<script type="text/javascript">
+  (function(d, m){
+      var kommunicateSettings = 
+          {"appId":"2eab76802b74008cc4d92b052a85afdaf","popupWidget":true,"automaticChatOpenOnNavigation":true};
+      var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+      s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+      var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+      window.kommunicate = m; m._globals = kommunicateSettings;
+  })(document, window.kommunicate || {});
+/* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+</script>
 
 
 </body>
